@@ -1,4 +1,4 @@
-package com.epam.util;
+package com.epam.junit;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

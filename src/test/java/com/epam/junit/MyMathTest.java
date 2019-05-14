@@ -1,17 +1,14 @@
-package com.epam.util;
+package com.epam.junit;
 
+import com.epam.service.MyMath;
 import org.junit.*;
-import org.junit.experimental.categories.Category;
 import org.junit.rules.TestRule;
 import org.junit.rules.Timeout;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import sun.management.counter.Units;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 import static org.junit.Assert.*;
 

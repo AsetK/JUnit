@@ -1,4 +1,4 @@
-package com.epam.util;
+package com.epam.service;
 
 public class MyMath {
 

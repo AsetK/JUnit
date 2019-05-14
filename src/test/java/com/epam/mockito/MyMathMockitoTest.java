@@ -1,11 +1,11 @@
-package com.epam.util;
+package com.epam.mockito;
 
-import org.junit.After;
+import com.epam.service.CalculatorService;
+import com.epam.service.MyMath;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
@@ -13,10 +13,11 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 public class MyMathMockitoTest {
+
     MyMath myMath = null;
 
-    @Mock                       // Creating fake instance of CalculatorService
-    CalculatorService service;
+    @Mock
+    CalculatorService service;  // Creating fake instance of CalculatorService
     //Or we can:
 //    CalculatorService service = mock(CalculatorService.class); // Creating fake instance of CalculatorService
 
@@ -25,7 +26,7 @@ public class MyMathMockitoTest {
 
     @Before
     public void setUp() throws Exception {
-        myMath = new MyMath(service);
+        myMath = new MyMath(service); // Manually adding dependency. Instead we can use - @InjectMocks.
     }
 
     @Test
